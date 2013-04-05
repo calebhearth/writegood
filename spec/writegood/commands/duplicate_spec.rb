@@ -1,8 +1,10 @@
 require 'spec_helper'
+require 'pry'
 
 describe Writegood::Duplicate do
   it 'finds duplicate words on the same line' do
     duplicate = Writegood::Duplicate.new('Many readers are not aware that the the')
+
     expect(duplicate).to be_violated
   end
 

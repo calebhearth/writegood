@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require 'writegood'
+Writegood::Runner.execute(*ARGV)

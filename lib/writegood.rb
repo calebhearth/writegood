@@ -1,6 +1,10 @@
-require "writegood/version"
-require "writegood/commands/duplicate"
+require 'rubygems'
+require 'writegood/version'
+require 'writegood/runner'
+require 'writegood/commands/duplicate'
 
 module Writegood
-  # Your code goes here...
+  def self.commands
+    %w[duplicate]
+  end
 end
